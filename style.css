@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body , html {
+    height: 100%;
+    width: 100%;
+    background-image: url("/images/batman.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#music{
+    display: flex;
+    padding: 5vw 15vw;
+    margin-left: 90px;
+    gap: 10px;
+}
+
+#left{
+    background-color: rgb(8, 7, 7);
+    width: 45%;
+    height: 60vh;
+    border-radius: 10px;
+}
+
+#right{
+    width: 50%;
+    height: 80vh;
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    padding: 1vw 2vw;
+    border-radius: 10px;
+    border: 1px solid #fff;
+}
+
+#right h3{
+    font-size: 40px;
+    font-weight: 600;
+    padding: 0 1vw;
+    color: aliceblue;
+}
+
+#all-songs{
+    padding: 2vw 2vw;
+}
+
+#song-image{
+    border: 1px solid #fff;
+    height: 60vh;
+    border-radius: 10px;
+    background-image: url("/images/acdc.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.song-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 10px;
+    border-top: 1px solid #000000;
+}
+
+.song-card h2{
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+.song-card .part1{
+    display: flex;
+    align-items: center;
+    pointer-events: none;
+}
+
+.song-card:nth-last-child(1){
+    border-bottom: 1px solid #000000;
+}
+
+.song-card:hover{
+  background-color: #9d9999;
+  cursor: pointer;
+}
+
+
+.song-card img{
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#player{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4vw;
+    font-size: 30px;
+    gap: 15px;
+    cursor: pointer;
+}
+
+#player h3{
+    background: rgb(0, 0, 0);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    padding: 8px 8px;
+}
